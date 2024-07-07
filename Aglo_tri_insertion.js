@@ -3,8 +3,6 @@ function triInsertion(arr) {
     for (var i = 1; i < n; i++) {
         var cle = arr[i];
         var j = i - 1;
-        // Déplace les éléments du tableau arr[0..i-1], qui sont plus grands que la clé,
-        // à une position en avant de leur position actuelle
         while (j >= 0 && arr[j] > cle) {
             arr[j + 1] = arr[j];
             j = j - 1;
